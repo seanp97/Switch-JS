@@ -85,7 +85,7 @@ $.InnerHTML(el, html)
 
 If used like: $.InnerHTML('p') - Retrieves the value of the html
 
-Else if used like: $.InnerHTML('p', '<h1>Hello World</h1>') - Sets elements html
+Else if used like: $.InnerHTML('p', '<p>Hello World</p>') - Sets elements html
 
 ----------------------
 
