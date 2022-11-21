@@ -536,6 +536,18 @@ class Switch {
             this.rect.top < (window.innerHeight || document.documentElement.clientHeight);
     }
 
+    PlayVideo(el) {
+        this._el = el;
+        this.selector = document.querySelector(this._el);
+        this.selector.play();
+    }
+
+    PauseVideo(el) {
+        this._el = el;
+        this.selector = document.querySelector(this._el);
+        this.selector.pause();
+    }
+
     PostJSON(url, data) {
         this.url = url;
         this._data = data;
