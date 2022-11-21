@@ -63,6 +63,11 @@ class Switch {
         setTimeout(this._cb, this._timout);
     }
 
+    NewWindow(url) {
+        this._url = url;
+        window.open(this._url);
+    }
+
     Interval(timeoutMs, cb) {
         this._cb = cb;
         this._timout = timeoutMs;
@@ -553,7 +558,7 @@ class Switch {
         this.selector = document.querySelector(this._el);
         this.selector.paused ? this.selector.play() : this.selector.pause()
     }
-    
+
     PostJSON(url, data) {
         this.url = url;
         this._data = data;
