@@ -548,6 +548,12 @@ class Switch {
         this.selector.pause();
     }
 
+    PlayPauseVideo(el) {
+        this._el = el;
+        this.selector = document.querySelector(this._el);
+        this.selector.paused ? this.selector.play() : this.selector.pause()
+    }
+    
     PostJSON(url, data) {
         this.url = url;
         this._data = data;
