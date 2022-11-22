@@ -20,9 +20,42 @@ class Switch {
         else {
             document.querySelector(this._elInputEl).value = this.inputValue;
         }
-    }      
+    } 
+    
+    ExtractNumber(text) {
+        this._text = text;
+        this._number = this._text.match(/\d/g);
+        this._number = this._number.join('');
+        return this._number;
+    }
 
-    OnMobile() {
+    IsNumber(int) {
+        this._int = int;
+        return isNaN(this._int) ? false : true; 
+    }
+
+    IsString(str) {
+        this._str = str;
+        if(typeof this._str === 'string' || this._str instanceof String) {
+            return true;
+        }
+        return false;
+    }
+
+    IsBoolean(bool) {
+        this._bool = bool;
+        if(typeof this._bool === 'boolean' || this._bool instanceof Boolean) {
+            return true;
+        }
+        return false;
+    }
+
+    IsLocalHost() {
+        if (location.hostname === "localhost" || location.hostname === "127.0.0.1") return true;
+        return false;
+    }
+
+    IsMobile() {
         this.toMatch = [
             /Android/i,
             /webOS/i,
