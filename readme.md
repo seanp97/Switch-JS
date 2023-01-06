@@ -345,7 +345,7 @@ $.RGBToHex(r, g, b)
 
 Returns RBG to Hex
 
-$.RGBToHex(235, 64, 52) // REturns #eb4034
+$.RGBToHex(235, 64, 52) // Returns #eb4034
 
 ----------------------
 
