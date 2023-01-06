@@ -323,13 +323,13 @@ $.Round(2.3) - Returns 2
 
 $.MaxVal(a, b)
 
-Round the biggest integer value
+Returns the biggest integer value
 
 ----------------------
 
 $.MinVal(a, b)
 
-Round the lowest integer value
+Returns the lowest integer value
 
 ----------------------
 
